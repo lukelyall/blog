@@ -1,0 +1,20 @@
+@layer base {
+  /* base generic styling */
+  /* setup the * values like margin, padding, and font and like h1,h2,he, etc. Things like that but not specific theming just the basic layout of how that whole page is going to look */
+
+  * {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  html {
+    overflow: hidden;
+  }
+
+  body {
+    background-size: 100% 100vh;
+    white-space: nowrap;
+  }
+
+}

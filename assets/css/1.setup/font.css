@@ -1,0 +1,19 @@
+/* import work sans font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+@layer setup {  
+  /* font configuration */
+
+  /* work sans thin */
+  @font-face {
+    font-family: "Work Sans";
+    src: url('fonts/worksans/eot/WorkSans-Thin.eot');
+    src: url('fonts/worksans/eot/WorkSans-Thin.eot') format('embedded-opentype'),
+        url('fonts/worksans/woff2/WorkSans-Thin.woff2') format('woff2'),
+        url('fonts/worksans/woff/WorkSans-Thin.woff') format('woff'),
+        url('fonts/worksans/ttf/WorkSans-Thin.ttf') format('truetype');
+    font-weight: 80;
+    font-style: normal;
+  }
+
+}

@@ -1,0 +1,19 @@
+/* master setup */
+
+/* base generic styling */
+@import url("1.setup/font.css");
+@import url("1.setup/base.css");
+
+  @import url("2.theme/config.css");
+  @import url("2.theme/display.css");
+  @import url("2.theme/media-queries.css");
+
+   /* @import url("3.interactables/"); */
+
+  @import url("4.elements/body.css");
+  @import url("4.elements/headers.css");
+  @import url("4.elements/div.css");
+
+@import url("5.components/nav-bar.css");
+@import url("5.components/nav-buttons.css");
+/* @import url("6.review/"); */
