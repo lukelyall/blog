@@ -8,10 +8,11 @@
   @import url("2.theme/display.css");
   @import url("2.theme/media-queries.css");
 
-   /* @import url("3.interactables/"); */
+   @import url("3.interactables/button.css");
 
   @import url("4.elements/header.css");
   @import url("4.elements/nav.css");
+  @import url("4.elements/section.css");
   @import url("4.elements/div.css");
   @import url("4.elements/footer.css");
 
@@ -21,4 +22,7 @@
 @import url("5.components/quote-block.css");
 @import url("5.components/text-block.css");
 @import url("5.components/image-card.css");
+@import url("5.components/sub-text.css");
+@import url("5.components/sub-title.css");
+@import url("5.components/text-link.css");
 /* @import url("6.review/"); */

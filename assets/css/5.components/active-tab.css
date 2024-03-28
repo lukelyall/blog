@@ -1,7 +1,7 @@
 @layer components {
   
   .active-tab {
-    color:#ffffff; 
+    color: var(--dark-mode-text); 
     pointer-events: none; 
     cursor: default
   }

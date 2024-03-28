@@ -1,0 +1,12 @@
+@layer interactables {
+
+  button {
+    padding-bottom: 0.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--dark-mode-link);
+    font-size: 1.125rem;
+    cursor: pointer;
+  }
+
+}

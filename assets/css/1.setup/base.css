@@ -10,11 +10,16 @@
 
   html {
     overflow: hidden;
+    overflow-y: auto;
   }
 
   body {
     background-size: 100% 100vh;
     white-space: nowrap;
+  }
+  
+  a {
+    cursor: pointer;
   }
 
 }
