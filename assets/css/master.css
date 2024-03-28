@@ -10,10 +10,15 @@
 
    /* @import url("3.interactables/"); */
 
-  @import url("4.elements/body.css");
-  @import url("4.elements/headers.css");
+  @import url("4.elements/header.css");
+  @import url("4.elements/nav.css");
   @import url("4.elements/div.css");
+  @import url("4.elements/footer.css");
 
-@import url("5.components/nav-bar.css");
-@import url("5.components/nav-buttons.css");
+@import url("5.components/title-text.css");
+@import url("5.components/active-tab.css");
+@import url("5.components/container.css");
+@import url("5.components/quote-block.css");
+@import url("5.components/text-block.css");
+@import url("5.components/image-card.css");
 /* @import url("6.review/"); */

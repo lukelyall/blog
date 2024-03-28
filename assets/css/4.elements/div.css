@@ -5,18 +5,4 @@
     padding: 1rem;
   }
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;  
-    max-width: 600px;
-  }
-
-  .quote-block {
-    margin: 0 auto;
-    max-width: 400px;
-    text-align: center;
-    white-space: normal;
-  }
-
 }

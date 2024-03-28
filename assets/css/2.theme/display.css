@@ -9,10 +9,6 @@
     color: var(--dark-mode-text);
   }
 
-  h1 {
-    font-size: 1.875rem;
-  }
-
   a {
     text-decoration: none;
     color: var(--dar-mode-link);

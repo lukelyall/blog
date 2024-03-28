@@ -1,0 +1,10 @@
+@layer components {
+
+  .quote-block {
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    white-space: normal;
+  }
+
+}

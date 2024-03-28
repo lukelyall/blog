@@ -1,0 +1,8 @@
+@layer components {
+  /* title text configuration */
+
+  .title-text {
+    font-size: 1.875rem;
+  }
+  
+}

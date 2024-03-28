@@ -1,11 +1,11 @@
-@layer components {
+@layer elements {
   /* nav-bar div configuration */
 
-  .nav-buttons {
+  nav {
     padding: 0.313rem 0 0.313rem 0;
   }
 
-  .nav-buttons a {
+  nav a {
     margin-left: 0.313rem;
   }
 
