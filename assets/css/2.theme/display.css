@@ -2,7 +2,7 @@
 /* setup the coloring, font-weight, font-size, font-style, line-height, background, etc. values for body, h1, p, b, etc. */
 
   body {
-    background-color: #2a3133;
+    background-color: var(--dark-mode-background);
   }
 
   h1, h2, h3, h4, h5, h6 {

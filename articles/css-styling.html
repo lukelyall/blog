@@ -126,10 +126,12 @@
                 Finally, the master.css file is where all the layers are combined. This file imports all the layers and their 
                 respective files and is the one file added to the script tag in the HTML.
                 <br>This file will look something like this:<br>
-                /* master css file */<br><br>
-                @import url("1.setup/font.css");<br>
-                @import url("1.setup/base.css");<br><br>
-                &emsp;@import url("2.theme/config.css");<br><br>
+                <code>
+                  /* master css file */<br><br>
+                  @import url("1.setup/font.css");<br>
+                  @import url("1.setup/base.css");<br><br>
+                  &emsp;@import url("2.theme/config.css");<br><br>
+                </code>
                 That's the whole structure. This file structure has helped me keep my CSS clean and allowed for easier readability for
                 others. Everybody likes to use their own way of structuring CSS, but I hope that this helped to give an idea on what
                 you may want to do with your own CSS files.

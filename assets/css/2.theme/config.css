@@ -3,6 +3,8 @@
 
   :root {
     /* color pallette */
+    --dark-mode-background: #2a3133;
+    --dark-mode-code: #353a3a;
     --dark-mode-divider: #aba4aa;
     --dark-mode-text: #ffffff;
     --dark-mode-link: #c3bcc2;
