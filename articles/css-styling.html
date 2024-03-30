@@ -20,7 +20,119 @@
             <section>
               <p class="sub-title">Introduction</p>
               <p class="text-block">
+                There are a lot of standards on how CSS should by styled and structured, all with benefits 
+                and drawbacks. I found it difficult to follow one folder structure completely, so I made
+                my own CSS structure for modularity and easy readability for others. My CSS file structure 
+                splits the main CSS into six folders: setup, theme, interactables, elements, components, and review 
+                with one master CSS file.
+              </p>
+            </section>
 
+            <section>
+              <p class="sub-title">Folder Structure</p>
+              <p class="text-block">
+                This is my current folder structure: <br>
+                /css/<br>
+                |- 1.setup<br>
+                |- 2.theme<br>
+                |- 3.interactables<br>
+                |- 4.elements<br>
+                |- 5.components<br>
+                |- 6.review<br>
+                |_ master.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Setup</p>
+              <p class="text-block">
+                The first folder, 1.setup, is for the basic general settings of the project and the 
+                layers file. If you are unfamiliar with the @layer feature of CSS, I would recommend 
+                reading this 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@layer" target="_blank" rel="noopener noreferrer" class="sub-text">@layer documentation</a>. 
+                <br>Setup's file structure:<br>
+                |- 1.setup<br>
+                |&emsp;|- base.css<br>
+                |&emsp;|_ layers.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Theme</p>
+              <p class="text-block">
+                The 2.theme folder is for setting up variables, any styles that change the visuals of 
+                the site such as background color or text color, and media queries. 
+                <br>Theme's file structure:<br>
+                |- 2.theme<br>
+                |&emsp;|- config.css<br>
+                |&emsp;|- display.css<br>
+                |&emsp;|_ media-queries.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Interactables</p>
+              <p class="text-block">
+                The third folder, 3.interactables, is for anything a user interacts with such as buttons and 
+                sliders.
+                <br>Interactable's file structure<br>
+                |- 3.interactables<br>
+                |&emsp;|_ button.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Elements</p>
+              <p class="text-block">
+                The 4.elements folder is for how HTML elements without classes are going to look. This is 
+                different from the 1.setup folder because it focuses on HTML elements like the spacing of the divs
+                and not the generic CSS setup.
+                <br>Element's file structure:<br>
+                |- 4.elements<br>
+                |&emsp;|- div.css<br>
+                |&emsp;|- footer.css<br>
+                |&emsp;|- header.css<br>
+                |&emsp;|_ section.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Components</p>
+              <p class="text-block">
+                The fifth folder, 5.components, is for elements that need special classes for appearance. This can include 
+                CSS for items such as quote blocks, images, or text blocks.
+                <br>Components' file structure:<br>
+                |- 5.components<br>
+                |&emsp;|- image-card.css<br>
+                |&emsp;|- text-block.css<br>
+                |&emsp;|_ quote-block.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Review</p>
+              <p class="text-block">
+                The sixth folder, 6.review, should be the least used folder and is for CSS that works, but how it was made is 
+                sketchy so it needs another pair of eyes or to be fixed later.
+                <br>Review's file structure:<br>
+                |- 6.review<br>
+                |&emsp;|_ fix-me.css<br>
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">Master File</p>
+              <p class="text-block">
+                Finally, the master.css file is where all the layers are combined. This file imports all the layers and their 
+                respective files and is the one file added to the script tag in the HTML.
+                <br>This file will look something like this:<br>
+                /* master css file */<br><br>
+                @import url("1.setup/font.css");<br>
+                @import url("1.setup/base.css");<br><br>
+                &emsp;@import url("2.theme/config.css");<br><br>
+                That's the whole structure. This file structure has helped me keep my CSS clean and allowed for easier readability for
+                others. Everybody likes to use their own way of structuring CSS, but I hope that this helped to give an idea on what
+                you may want to do with your own CSS files.
               </p>
             </section>
 
