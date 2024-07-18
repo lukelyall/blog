@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/master.css" />
+    <script src="../components/header.js" type="text/javascript" defer></script>
+    <title>LaTeX Resume</title>
+  </head>
+  <body>
+    <div class="container">
+      <header-component></header-component>
+      <main>
+        <article>
+          <div>
+            <button onclick="history.back()">&lt articles</button>
+            <p class="title-text">LaTeX Resume</p>
+
+            <section>
+              <p class="sub-title">Introduction</p>
+              <p class="text-block">
+                I had previously used Microsoft Word for editing and formatting my resume, but have recently come to appreciate
+                LaTeX and its ability to create professional looking documents easily. If you're unfamiliar with LaTeX, it is simply a 
+                document-production application that relies on commands similar to HTML and markdown.
+              </p>
+            </section>
+
+            <section>
+              <p class="sub-title">LaTeX Basic Syntax Example</p>
+              <p class="text-block">
+                <code>
+                  \documentclass{article}<br>
+                  \begin{document}<br>
+                  First document. This is a simple example, with no <br>
+                  extra parameters or packages included.<br>
+                  \end{document}<br>
+                </code>
+                This simple example shows a few different formatting requirements in LaTeX including the
+                documentclass, begin, and end tags. \documentclass{article} defines what type of document you are 
+                making (in this case an article) and bases the overall appearance of the document on this tag. 
+                For example, a document with \documentclass{article} will look different than a document with 
+                \documentclass{resume}. Next, the \begin{document} and \end{document} are used to store the entire 
+                contents of the current document. 
+              </p>
+            </section>
+            
+            <section>
+              <p class="sub-title">Creating a Resume</p>
+              <p class="text-block">
+                Now to create a resume, you will use all of the tags previously mentioned tags along with some new ones.
+                First, set the document class to resume with:
+                <code>
+                  \documentclass{resume}
+                </code>
+                After that, you can decide if there are any packages you want to use for your resume. Two packages that I suggest 
+                are font packages and hypperref (used for creating links). For arial font and the use of hypperrefs do the following:
+                <code>
+                  \usepackage{helvet}<br>
+                  \renewcommand{\familydefault}{\sfdefault}<br>
+                  \usepackage[colorlinks=true, urlcolor=blue, linkcolor=red]{hyperref}
+                </code>
+
+                With the setup complete, you can setup the header of your resume which typically consists of your name, contact information, 
+                and location. This all can be setup easily with the following lines:
+                <code>
+                  \name{Your Name}<br><br>
+                  \address{(xxx)~$\cdot$~xxx~$\cdot$~xxxx \: \href{mailto:email@email.com}{email@email.com} \: Anchorage, Alaska}
+                </code>
+                This adds two lines one with your name and another with your phone, email, and location. The \: is used to put spaces 
+                between each bit of personal information, but the \: could be changed out for another spacing item such as dashes. 
+                Now the header is completed with basic information and we can move onto the full document with the command:
+                <code>
+                  \begin{document}
+                </code>
+                Next, we can create sections for information about yourself to do this you will use the following style:
+                <code>
+                  \begin{rSection}{Experience}<br><br>
+                  &emsp;\begin{rSubsection}{Work Location}{May 2023 - August 2023}{Work Title}{Anchorage, AK}<br>
+                  &emsp;&emsp;\item Lorem ipsum <br>
+                  \end{rSubsection}<br>
+                </code>
+                This creates a new section titled Experience and throws in a work position with bullet points underneath. For my resume, 
+                I followed this style for all my sections with minor changes made in each section for different styling such as removing 
+                bullet points.<br><br>
+                And that's the basics of using LaTeX for a resume. If creating a resume from scratch seems too complex, there are many great templates 
+                that do everything I have shown here already. If using a template, I'd advise that you take time to understand the basics of LaTeX 
+                and how to make design changes to your resume. LaTeX may not be easier than Word for everybody so use whatever you are most comfortable with.
+              </p>
+            </section>
+
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

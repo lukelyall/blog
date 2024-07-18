@@ -1,0 +1,10 @@
+@layer elements {
+
+  code {
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    display: block;
+    border: 1px solid var(--dark-mode-divider);
+  }
+
+}
