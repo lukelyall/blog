@@ -13,7 +13,10 @@ class Header extends HTMLElement {
 
     this.innerHTML = `
       <header>
-        <p class="title-text">Luke Lyall</p>
+        <div class="column-section">
+          <p class="title-text">Luke Lyall</p>
+          <p class="medium-text">Analyst/Programmer</p>
+        </div>
           <nav> 
             <a ${inProjects || inArticles ? 'href="../projects.html"' : 'href="./projects.html"'} ${projects ? 'class="active-tab"' : ''}>projects</a>
             <a ${inProjects || inArticles ? 'href="../articles.html"' : 'href="./articles.html"'} ${articles ? 'class="active-tab"' : ''}>articles</a>

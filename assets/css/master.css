@@ -17,13 +17,16 @@
   @import url("4.elements/footer.css");
   @import url("4.elements/code.css");
 
-@import url("5.components/title-text.css");
 @import url("5.components/active-tab.css");
+@import url("5.components/column-section.css");
 @import url("5.components/container.css");
-@import url("5.components/quote-block.css");
-@import url("5.components/text-block.css");
 @import url("5.components/image-card.css");
+@import url("5.components/medium-text.css");
+@import url("5.components/quote-block.css");
 @import url("5.components/sub-text.css");
 @import url("5.components/sub-title.css");
+@import url("5.components/text-block.css");
 @import url("5.components/text-link.css");
+@import url("5.components/title-text.css");
+
 /* @import url("6.review/"); */

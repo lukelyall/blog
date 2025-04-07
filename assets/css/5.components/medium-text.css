@@ -1,0 +1,9 @@
+@layer components {
+
+  .medium-text {
+    text-decoration: none;
+    color: var(--dark-mode-link);
+    font-size: 1.125rem;
+  }
+
+}
